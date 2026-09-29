@@ -1,0 +1,113 @@
+.about {
+  padding: 100px 30px;
+  background: #ffffff;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-heading p {
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 42px;
+  color: #111827;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: 27px;
+  line-height: 1.4;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.highlight-card {
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card > span {
+  font-size: 30px;
+}
+
+.highlight-card h4 {
+  margin: 0 0 5px;
+  color: #111827;
+  font-size: 16px;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .about-text h3 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
